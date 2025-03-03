@@ -1,0 +1,25 @@
+.assessment4-right{
+    padding-top: 2em ;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.assessment4-left{
+    height: 100vh;
+    top: 0px;
+    position: sticky;
+}
+
+@media screen and (max-width: 692px){
+    .assessment4-left{
+        height: 100vh;
+        top: 0px;
+        position: unset;
+        justify-content: center;
+    }
+
+    .assessment4-right{
+        justify-content: center;
+    }
+    
+}

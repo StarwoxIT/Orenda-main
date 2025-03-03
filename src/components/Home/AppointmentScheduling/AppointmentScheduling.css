@@ -1,0 +1,54 @@
+@font-face {
+    font-family: OggBold;
+    src: url(../../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
+}
+
+.appointment-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.appointment-wrapper{
+    width: 90%;
+    background-color: #F8F8FF;
+    padding: 2em 2em;
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    border-radius: 1em;
+    border: 1.5px solid #2E0086;
+}
+
+.appointment-main h3{
+    margin-bottom: .5em;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: OggBold;
+}
+
+.appointment-main p{
+    font-family: "DM Sans", sans-serif;
+}
+
+.break{
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 439px) {
+    .appointment-wrapper{
+        padding: 2em 1em;
+        gap: .5em;
+        width: 95%;
+        text-align: center;
+    }
+
+    .appointment-wrapper img{
+        flex-basis: 5%;
+    }
+
+    .appointment-wrapper p{
+        text-align: center;
+        flex-basis: 95%;
+    }
+}

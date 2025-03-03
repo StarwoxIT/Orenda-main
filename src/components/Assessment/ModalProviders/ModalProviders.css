@@ -1,0 +1,47 @@
+.custom-slick-slider-assessment{
+    width: 100%;
+}
+
+.pop{
+    display: flex;
+    max-width: 100%;
+    padding: 0 .5em;
+}
+
+@media screen and (max-width: 772px){
+    .slick-slide {
+        max-width: 365px !important;
+    }
+}
+
+
+@media screen and (max-width: 491px){
+    .slick-slide {
+        width: 100%;
+    }
+}
+
+
+
+.py-4{
+    padding: 0;
+}
+
+
+/* @media screen and (max-width: 860px){
+    .slick-slide{
+        max-width: 290px !important;
+    }
+
+    .custom-slick-slider-assessment{
+        width: 79.5%;
+    }
+}
+
+@media screen and (max-width: 524px){
+    
+    .custom-slick-slider-assessment{
+        width: 80.5%;
+    }
+} */
+

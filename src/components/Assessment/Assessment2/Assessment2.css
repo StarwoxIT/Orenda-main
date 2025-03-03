@@ -1,0 +1,47 @@
+.assessment2-right{
+    flex-basis: 50%;
+    flex-direction: column;
+    display: flex;
+    padding: 0 3em;
+    justify-content: center;
+}
+
+
+.next-prev{
+    display: flex;
+    align-self: flex-end;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.prev{
+    color: #127801;
+    border: 1px solid #127801;
+    padding: .7em 0;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked{
+    color: #127801 !important;
+}
+
+.css-j204z7-MuiFormControlLabel-root{
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+
+@media screen and (max-width: 693px){
+    .assessment2-right{
+        font-size: 1rem !important;
+        padding: 0 1em;
+    }
+    
+    .prev{
+        width: 300px;
+    }
+}

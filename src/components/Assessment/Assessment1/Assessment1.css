@@ -1,0 +1,147 @@
+@font-face {
+    font-family: OggExtraLight;
+    src: url(../../../fonts/Ogg-Light-BF646c18fbb73f7.otf);
+}
+
+.assessment1-wrapper{
+    display: flex;
+    min-height: 100vh;
+}
+
+.assessment1-left{
+    background-color: #127801;
+    flex-basis: 50%;
+    padding: 0 3em;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.homepage{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    cursor: pointer;
+}
+
+.homepage svg{
+    font-size: 1em;
+}
+
+.question{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    font-family: "DM sans";
+}
+
+.question .q-no{
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: OggExtraLight;
+}
+
+.question h1{
+    font-size: 2rem;
+}
+
+.question .main-q{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.assessment1-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    padding: 0 3em;
+}
+
+#demo-simple-select-helper-label{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.error-message{
+    margin-top: 1em !important;
+    
+}
+
+.next{
+    align-self: flex-end;
+    margin-top: 1em;
+    background-color: #127801;
+    color: white;
+    padding: .7em 0;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 795px){
+    .question .main-q{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 693px){
+    .assessment1-wrapper{
+        flex-direction: column;
+        min-height: unset;
+        margin-bottom: 6em;
+    }
+
+    .assessment1-left{
+        padding: 4em ;
+    }
+
+    .assessment1-left{
+        background-color: white;
+    }
+
+    .question{
+        color: black;
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+
+    .question .q-no{
+        font-weight: 500;
+    }
+
+    .question{
+        gap: 1em;
+    }
+
+    .next-prev{
+        align-self: center !important;
+        flex-direction: column;
+    }
+
+    .next{
+        width: 300px;
+    }
+
+    
+
+    .css-ahj2mt-MuiTypography-root{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .assessment1-left{
+        padding: 3em 2em 0em 2em;
+    }
+
+    .assessment1-right{
+        padding: 0 1em;
+    }
+}

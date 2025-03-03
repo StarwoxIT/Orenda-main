@@ -1,0 +1,109 @@
+@font-face {
+    font-family: OggExtraBold;
+    src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
+  }
+  @font-face {
+    font-family: OggBold;
+    src: url(../../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
+  }
+
+.hearclient-container{
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    padding: 6em 0;
+    position: relative;
+}
+
+.hear_client_background{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 440px;
+}
+
+.hear-client-wrapper{
+    width: 90%;
+    z-index: 1;
+}
+
+.hear-heading{
+    font-size: 2rem;
+    font-family: OggBold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.main-hear{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.main-hear img{
+    align-self: self-start;
+
+}
+
+.custom-slick-slider{
+    width: 70%;
+}
+
+.review-p p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.individual{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+
+.individual-circle{
+    border: 1px solid #BDBCBC;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.individual h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.individual-arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow{
+    display: flex;
+    gap: 1em;
+}
+
+
+@media screen and (max-width: 582px){
+    .main-hear img{
+        width: 30px;
+    }
+
+    .review-p p{
+        font-size: 1rem;
+    }
+
+    .main-hear{
+        gap: 1em;
+    }
+
+    .custom-slick-slider{
+        width: 90%;
+    }
+}
