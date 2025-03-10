@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PartnerItem = ({ partner, children, children2 }) => {
+const PartnerItem = ({ partner }) => {
   return (
     <AccordionItem
       className="padding-inline transition-colors ~text-sm/lg ~py-5/[1.94rem] [&[data-state=open]]:bg-purple-mist"
@@ -44,13 +44,25 @@ const PartnerItem = ({ partner, children, children2 }) => {
           <h4 className="font-semibold text-[#6D6D6D] ~text-base/lg">About</h4>
           <p className="~mb-4/8">{partner.about}</p>
 
-          {children2}
-
           {/* biography of partner */}
-          <h4 className="font-semibold text-[#6D6D6D] ~text-base/lg">Biography</h4>
-          <p dangerouslySetInnerHTML={{ __html: partner.biography }} />
+          <h4 className="font-semibold text-[#6D6D6D] ~text-base/lg">
+            Biography
+          </h4>
+          <p>{partner.biography}</p>
 
-          {children}
+          {/* link for green point referral */}
+          {partner.referral && (
+            <>
+              <h4 className="font-semibold text-[#6D6D6D] ~text-base/lg ~mt-4/8">
+                Refer a patient
+              </h4>
+              <a className="underline" href={partner.referral.link}>
+                {partner.referral.label}
+              </a>
+
+              {partner.referral.extra}
+            </>
+          )}
         </AccordionContent>
       </div>
     </AccordionItem>
