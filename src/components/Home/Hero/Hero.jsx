@@ -7,6 +7,7 @@ import faces from "../../../assets/faces.png";
 import Icon from "../../../assets/Icon.png";
 import user from "../../../assets/user.png";
 import pluswhiter from "../../../assets/plus_white.png";
+import facesNew from "../../../assets/facesNew.png"
 
 const Hero = () => {
   const providersRef = useRef(null);
@@ -107,7 +108,7 @@ const Hero = () => {
                   />
                 )}
               </p>
-              <img src={faces} alt="" style={{ width: 200 }} />
+              <img src={facesNew} alt="" style={{ width: 200 }} />
             </div>
             <div className="items-left bord-Animation">
               <div className="items-left-contents">
@@ -158,7 +159,7 @@ const Hero = () => {
                   />
                 )}
               </p>
-              <img src={faces} alt="" />
+              <img src={facesNew} alt="" />
             </div>
             <div className="line"></div>
             <div className="it-mobile-right">
