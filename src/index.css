@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -16,31 +16,31 @@ html *::after {
 }
 
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('./assets/fonts/Ogg Text TRIAL regular.ttf') format('truetype');
+  font-family: "Ogg Text TRIAL";
+  src: url("./assets/fonts/Ogg Text TRIAL regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400; /* Regular */
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('./assets/fonts/Ogg Text TRIAL medium.ttf') format('truetype');
+  font-family: "Ogg Text TRIAL";
+  src: url("./assets/fonts/Ogg Text TRIAL medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500; /* Medium */
   font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('./assets/fonts/Ogg Text TRIAL medium-bold.ttf') format('truetype');
+  font-family: "Ogg Text TRIAL";
+  src: url("./assets/fonts/Ogg Text TRIAL medium-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600; /* Semi-bold or Medium-Bold */
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('./assets/fonts/Ogg Text TRIAL.ttf') format('truetype');
+  font-family: "Ogg Text TRIAL";
+  src: url("./assets/fonts/Ogg Text TRIAL.ttf") format("truetype");
   font-style: normal;
   font-weight: 700; /* Default Bold */
   font-display: swap;
@@ -126,7 +126,6 @@ h6 {
   font-size: 16px;
 }
 
-
 @layer components {
   main p,
   main li {
@@ -143,7 +142,7 @@ h6 {
   }
 
   .fieldset {
-    @apply rounded-2xl border border-[#D6D6D6] font-dm-sans pt-[1.69rem] ~pr-4/[4.75rem] ~pb-[3.25rem]/[4.06rem] ~pl-4/[3.63rem];
+    @apply rounded-2xl border border-[#D6D6D6] pt-[1.69rem] font-dm-sans ~pr-4/[4.75rem] ~pb-[3.25rem]/[4.06rem] ~pl-4/[3.63rem];
   }
 
   .rap-fieldset {
@@ -157,6 +156,10 @@ h6 {
   .card__shadow {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
   }
+
+  .box_center {
+    @apply mt-16 flex flex-col items-center text-center;
+  }
 }
 
 .css-dmmspl-MuiFormGroup-root {
@@ -169,9 +172,9 @@ h6 {
 }
 
 .assessment2-right-checkbox {
-  border: 1px solid #C9C9C9 !important;
-  padding: .3em .5em !important;
-  border-radius: .5em !important;
+  border: 1px solid #c9c9c9 !important;
+  padding: 0.3em 0.5em !important;
+  border-radius: 0.5em !important;
   width: 100% !important;
   margin-left: unset !important;
   margin-right: unset !important;
@@ -196,4 +199,3 @@ h6 {
     @apply px-5 sm:~px-8/10;
   }
 }
-
