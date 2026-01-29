@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const url =
-  'https://5092fat33f.execute-api.us-east-2.amazonaws.com/orendaStage/api/v1/provider/get_providers';
+  'https://p8siddt2k1.execute-api.eu-north-1.amazonaws.com/prod/api/v1/provider/get_providers';
 
 function orderProviders(order, providerList) {
   const providersList = providerList ?? [];

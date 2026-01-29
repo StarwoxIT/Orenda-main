@@ -33,6 +33,7 @@ import ExecutiveInfo from "./components/Executive Info/ExecutiveInfo";
 import Blog from "./components/Blogs/Blog";
 import Blogs from "./components/Blogs/Blogs";
 import OurPartners from "./components/Partners/OurPartners";
+import PolicyTerms from "./components/PolicyTerms/PolicyTerms";
 
 function App() {
   const queryClient = useQueryClient();
@@ -63,6 +64,8 @@ function App() {
           <Route path="blog" element={<Blogs />} />
           <Route path="blog/:title" element={<Blog />} />
           <Route path="our-partners" element={<OurPartners />} />
+          <Route path="practice-policy" element={<PolicyTerms/>} />
+          
         </Route>
         <Route path="/Assessment1" element={<Assessment1 />} />
         <Route path="/Assessment2" element={<Assessment2 />} />

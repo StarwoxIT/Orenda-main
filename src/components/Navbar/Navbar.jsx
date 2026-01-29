@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/orenda_cap_logo.png';
 import hamburger from '../../assets/hamburger.png';
 import close from '../../assets/hamburger-close.svg';
 import { NavLink } from 'react-router-dom';

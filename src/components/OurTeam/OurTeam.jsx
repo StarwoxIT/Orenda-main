@@ -25,7 +25,7 @@ const OurTeam = () => {
         app_tittle3={Appointment.title3}
       />
       <BecomeProvider bg="white" />
-      <Team itemsPerPage={8} />
+      {/* <Team itemsPerPage={8} /> */}
       <ContactUs />
       <ExecutiveTeam/>
     </>

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo1.png";
+import logo from "../assets/logo.png";
 import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useGSAP } from "@gsap/react";
@@ -32,11 +32,6 @@ const Header = () => {
     { label: "About", path: "/about", icon: "fa-solid fa-address-card" },
     { label: "Blog", path: "/blog", icon: "fa-solid fa-blog" },
     {
-      label: "Privacy Policy",
-      path: "/privacy-policy",
-      icon: "fa-solid fa-file-shield",
-    },
-    {
       label: "Contact Us",
       path: "/contact-us",
       icon: "fa-solid fa-comment-dots",
@@ -49,6 +44,17 @@ const Header = () => {
   ];
 
   const linkWithSubLinks = [
+    {
+      label: "Policies",
+      icon: "fa-solid fa-file-shield",
+      sublinks: [
+        {
+          label: "Privacy Policy",
+          path: "/privacy-policy",
+        },
+        { label: "Practice Policy", path: "/practice-policy" },
+      ],
+    },
     {
       label: "Refer A Patient",
       icon: "fa-solid fa-user-group",
@@ -115,7 +121,7 @@ const Header = () => {
       >
         <div className="mx-auto flex max-w-[90rem] items-center justify-between">
           <div className={`flex-shrink-0 ~w-20/[5.8125rem]`}>
-            <img width={150} height={100} src={logo} alt="Orenda Psychiatry" />
+            <img width={100} height={100} src={logo} alt="Orenda Psychiatry" />
           </div>
 
           {/* Desktop Menu */}
